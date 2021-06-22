@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MAMulti">
+
+    <TextView
+        android:id="@+id/txtTituloM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:gravity="center"
+        android:text="MULTIPLICACIÓN"
+        android:textColor="#2196F3"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtN1M"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:hint="Ingrese un número" />
+
+    <EditText
+        android:id="@+id/txtN2M"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:hint="Ingrese un número" />
+
+    <TextView
+        android:id="@+id/txtResultadoM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#2196F3"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnMulti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25sp"
+        android:backgroundTint="#2196F3"
+        android:onClick="multi"
+        android:text="MULTIPLICACIÓN"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:text="Historia"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:text="@string/multi"
+                android:textIsSelectable="true" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
